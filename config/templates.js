@@ -6,7 +6,7 @@
  * @prop {string} desc 一句话说清楚你的脚手架是干什么的
  */
 
-module.export = [{
+module.exports = [{
   name: 'rephic',
   git: 'https://github.com/pspgbhu/Rephic.git',
   desc: 'React 同构直出脚手架',
