@@ -10,15 +10,15 @@ const path = require('path');
 module.exports = {
   vscode: {
     source: path.resolve(__dirname, '../assets/env/vscodeSettings.json'),
-    target: '../.vscode/settings.json'
+    target: '.vscode/settings.json'
   },
   editorconfig: {
     source: path.resolve(__dirname, '../assets/env/editorconfig'),
-    target: '../.editorconfig'
+    target: '.editorconfig'
   },
   eslint: {
     source: path.resolve(__dirname, '../assets/env/eslintrc'),
-    target: '../.eslintrc'
+    target: '.eslintrc'
   }
 };
   
