@@ -18,4 +18,8 @@ module.exports = [{
   name: 'hammer-site',
   git: 'https://github.com/xieyankun/HammerSite.git',
   desc: 'H5 静态页面工程脚手架',
+}, {
+  name: 'react-template',
+  git: 'https://github.com/simqifeng/react-template.git',
+  desc: 'React 工程脚手架',
 }];
