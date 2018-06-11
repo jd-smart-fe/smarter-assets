@@ -16,9 +16,21 @@ module.exports = {
     source: path.resolve(__dirname, '../assets/env/editorconfig'),
     target: '.editorconfig'
   },
-  eslint: {
-    source: path.resolve(__dirname, '../assets/env/eslintrc'),
+  browserrc: {
+    source: path.resolve(__dirname, '../assets/env/browserrc.js'),
     target: '.eslintrc'
-  }
+  },
+  reactrc: {
+    source: path.resolve(__dirname, '../assets/env/reactrc.js'),
+    target: '.eslintrc'
+  },
+  vuerc: {
+    source: path.resolve(__dirname, '../assets/env/vuerc.js'),
+    target: '.eslintrc'
+  },
+  noderc: {
+    source: path.resolve(__dirname, '../assets/env/noderc.js'),
+    target: '.eslintrc'
+  },
 };
   
