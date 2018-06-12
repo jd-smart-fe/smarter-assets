@@ -8,6 +8,7 @@
 const path = require('path');
  
 module.exports = {
+  all:['vscode', 'editorconfig'],
   vscode: {
     source: path.resolve(__dirname, '../assets/env/vscodeSettings.json'),
     target: '.vscode/settings.json'
