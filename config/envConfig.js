@@ -8,30 +8,52 @@
 const path = require('path');
  
 module.exports = {
-  all:['vscode', 'editorconfig'],
+  all:['vscode', 'eslint', 'editorconfig'],
   vscode: {
-    source: path.resolve(__dirname, '../assets/env/vscodeSettings.json'),
-    target: '.vscode/settings.json'
+    original: {
+      source: path.resolve(__dirname, '../assets/env/vscodeSettings.json'),
+      target: '.vscode/settings.json',
+    },
+    rule: {},
   },
   editorconfig: {
-    source: path.resolve(__dirname, '../assets/env/editorconfig'),
-    target: '.editorconfig'
+    original: {
+      source: path.resolve(__dirname, '../assets/env/editorconfig'),
+      target: '.editorconfig',
+    },
+    rule: {},
   },
-  browserrc: {
-    source: path.resolve(__dirname, '../assets/env/browserrc.js'),
-    target: '.eslintrc'
-  },
-  reactrc: {
-    source: path.resolve(__dirname, '../assets/env/reactrc.js'),
-    target: '.eslintrc'
-  },
-  vuerc: {
-    source: path.resolve(__dirname, '../assets/env/vuerc.js'),
-    target: '.eslintrc'
-  },
-  noderc: {
-    source: path.resolve(__dirname, '../assets/env/noderc.js'),
-    target: '.eslintrc'
+  eslint: {
+    original: {
+      source: path.resolve(__dirname, '../assets/env/browserrc.js'),
+      target: '.eslintrc',
+    },
+    rule: {
+      b: {
+        source: path.resolve(__dirname, '../assets/env/browserrc.js'),
+      },
+      browser: {
+        source: path.resolve(__dirname, '../assets/env/browserrc.js'),
+      },
+      n: {
+        source: path.resolve(__dirname, '../assets/env/noderc.js'),
+      },
+      node: {
+        source: path.resolve(__dirname, '../assets/env/noderc.js'),
+      },
+      r: {
+        source: path.resolve(__dirname, '../assets/env/reactrc.js'),
+      },
+      react: {
+        source: path.resolve(__dirname, '../assets/env/reactrc.js'),
+      },
+      v: {
+        source: path.resolve(__dirname, '../assets/env/vuerc.js'),
+      },
+      vue: {
+        source: path.resolve(__dirname, '../assets/env/vuerc.js'),
+      }
+    },
   },
 };
   
